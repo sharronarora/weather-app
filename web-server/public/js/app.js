@@ -5,7 +5,7 @@ fetch('http://puzzle.mead.io/puzzle').then((response) => {
         console.log(data);
     })
 })
-fetch('http://localhost:3009/weather?address=boston').then((response) => {
+fetch('/weather?address=boston').then((response) => {
     console.log(response, 'this is responseeee');
     response
     .clone()
