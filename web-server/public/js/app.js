@@ -1,10 +1,10 @@
 console.log('client side javascript file is loaded');
 
-fetch('http://puzzle.mead.io/puzzle').then((response) => {
-    response.json().then((data) => {
-        console.log(data);
-    })
-})
+// fetch('http://puzzle.mead.io/puzzle').then((response) => {
+//     response.json().then((data) => {
+//         console.log(data);
+//     })
+// })
 fetch('/weather?address=boston').then((response) => {
     console.log(response, 'this is responseeee');
     response
