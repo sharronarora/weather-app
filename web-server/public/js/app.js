@@ -65,7 +65,7 @@ weatherForm.addEventListener('submit', (e) => {
         });
     }
 
-    fetch(`http://localhost:3009/weather?address=${location}`).then((response => {
+    fetch(`/weather?address=${location}`).then((response => {
         let err;
         console.log(response, 'response');
         response
@@ -94,8 +94,6 @@ weatherForm.addEventListener('submit', (e) => {
                 console.log('Data', data)
             }
         });
-
-        
 
         checkIfNumberPromise(10)
         .then(data => console.log('Promise Data', data))
